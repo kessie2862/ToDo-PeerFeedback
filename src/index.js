@@ -119,7 +119,7 @@ editTaskDescription = (task) => {
   inputElement.select();
 };
 
-function addNewTask(description) {
+const addNewTask = (description) => {
   const taskIndex = tasks.length;
 
   const task = { description, completed: false, index: taskIndex };
@@ -128,7 +128,7 @@ function addNewTask(description) {
 
   const listItemElement = createTaskLists(task);
   taskList.appendChild(listItemElement);
-}
+};
 
 // Clearing completed
 const clearCompletedTasks = () => {
